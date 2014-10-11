@@ -1,5 +1,6 @@
 require 'spec_helper'
+require 'shoulda/matchers'
 
 describe Category do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should have_many(:videos) }
 end
