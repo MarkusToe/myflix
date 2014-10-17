@@ -11,14 +11,15 @@ Category.delete_all
 
 category_dramas = Category.create( title: "TV Dramas")
 category_commedies = Category.create( title: "TV Commedies")
-
-Video.create(
-    title: "Family Guy",
-    description: "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another.",
-    small_cover_url: "/tmp/family_guy.jpg",
-    large_cover_url: "/tmp/family_guy.jpg",
-    category_id: category_dramas.id
-)
+6.times do
+  Video.create(
+      title: "Family Guy",
+      description: "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another.",
+      small_cover_url: "/tmp/family_guy.jpg",
+      large_cover_url: "/tmp/family_guy.jpg",
+      category_id: category_dramas.id
+  )
+end
 Video.create(
     title: "Futurama",
     description: "Fry, a pizza guy is accidentally frozen in 1999 and thawed out New Year's Eve 2999.",

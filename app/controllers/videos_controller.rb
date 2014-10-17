@@ -1,6 +1,9 @@
 class VideosController < ApplicationController
   def index
     @categories = Category.all
+    @categories.each do |category|
+      category.videos = category.recent_videos
+    end
   end
 
   def show
