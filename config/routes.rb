@@ -1,4 +1,7 @@
 Myflix::Application.routes.draw do
+  root 'static_pages#home'
+  get 'signup' => 'users#new'
+
   resources :categories
 
   resources :videos do
