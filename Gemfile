@@ -8,6 +8,7 @@ gem 'haml-rails'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'
+gem 'bcrypt', '3.1.7'
 
 group :development do
   gem 'sqlite3'
