@@ -3,6 +3,7 @@ Myflix::Application.routes.draw do
   get 'signup' => 'users#new'
 
   resources :categories
+  resources :users
 
   resources :videos do
     collection do
